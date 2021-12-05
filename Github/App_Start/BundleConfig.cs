@@ -22,9 +22,18 @@ namespace Github
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/aicha").Include(
+                     "~/asset/vendor/jquery/jquery.js",
+                     "~/asset/vendor/bootstrap/js/bootstrap.bundle.js",
+                     "~/asset/vendor/jquery-easing/jquery.easing.js",
+                     "~/asset/js/sb-admin-2.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      //"~/Content/bootstrap.css",
+                      //"~/Content/site.css"
+                      "~/asset/vendor/fontawesome-free/css/all.css",
+                      "~/asset/css/sb-admin-2.css"
+                      ));
         }
     }
 }
